@@ -1,0 +1,491 @@
+.header-class {
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#Layout {
+    color: #c2b9b9;
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 20px;
+    margin: 7px;
+}
+
+.list-elements {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    font-size: 13px;
+}
+
+.list-elements li {
+    list-style: none;
+}
+
+.list-elements li a {
+    color: #c2b9b9;
+    text-decoration: none;
+    font-weight: 540;
+}
+
+#hr-tag {
+    margin-top: -14px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #534d4d;
+    line-height: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    margin-right: 9px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #120202da;
+    margin-left: 8px;
+    font-weight: 450;
+}
+
+hr {
+    border-top-width: inherit;
+}
+
+h1 span {
+    font-size: 1rem;
+    color: #828282;
+    font-weight: 350;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.grid-item {
+    padding: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item h2 {
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin: 10px 0;
+    color: rgba(43, 116, 250, 0.705);
+}
+
+.grid-item p {
+    font-size: 16px;
+}
+
+.footer-tag {
+    margin-left: 30px;
+    margin-top: 36px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #908c8c;
+}
+
+/* General media query for grid adjustments */
+@media (max-width: 992px) {
+    .grid-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .list-elements {
+        display: none;
+        flex-direction: column;
+    }
+
+    .list-elements.active {
+        display: flex;
+    }
+
+    .list-elements li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .first-element {
+        flex: 1;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 426px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        width: 108%;
+        margin-left: 10px;
+    }
+
+    .header-class {
+        width: 120%;
+    }
+}
+
+@media (max-width: 350px) {
+    .header-container {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 5px;
+        font-size: 24px;
+    }
+
+    .list-elements.active {
+        display: flex;
+    }
+
+    .list-elements li {
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .first-element {
+        flex: 1;
+    }
+
+    .header-class {
+        width: 120%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px) {
+    .header-container {
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .header-container {
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 1470px) and (max-width: 1500px) {
+    .header-container {
+        margin-left: 58px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1470px) {
+    .header-container {
+        margin-left: 58px;
+    }
+}
+
+@media (min-width: 1299px) and (max-width: 1400px) {
+    .header-container {
+        margin-left: 51px;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 426px) {
+    #Layout {
+        margin-left: 13px;
+    }
+}
+
+
+@media (min-width: 351px) and (max-width: 424px) {
+    #Layout {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 349px) and (max-width: 350px) {
+    #Layout {
+        margin-left: -19px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 349px) {
+    #Layout {
+        margin-left: -7px;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 321px) {
+    #Layout {
+        margin-left: 3px;
+    }
+}
+
+@media (min-width: 288px) and (max-width: 310px) {
+    #Layout {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 288px) {
+    #Layout {
+        margin-left: 7px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 382px) {
+    .header-class {
+        width: 123%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 414px) {
+    .header-class {
+        width: 124%;
+    }
+}
+
+@media (min-width: 207px) and (max-width: 258px) {
+    .header-class {
+        width: 125%;
+    }
+}
+
+@media (min-width: 173px) and (max-width: 207px) {
+    .header-class {
+        width: 130%;
+    }
+}
+
+@media (min-width: 128px) and (max-width: 173px) {
+    .header-class {
+        width: 140%;
+    }
+}
+
+@media (min-width: 93px) and (max-width: 127px) {
+    .header-class {
+        width: 190%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 93px) {
+    .header-class {
+        width: 300%;
+    }
+}
+
+@media (max-width: 194px) {
+    .footer-tag {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 287px) and (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h1 span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 266px) and (max-width: 286px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h1 span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 245px) and (max-width: 266px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h1 span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 223px) and (max-width: 244px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h1 span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 212px) and (max-width: 222px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h1 span {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 180px) and (max-width: 212px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    h1 span {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 169px) and (max-width: 180px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    h1 span {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 168px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    h1 span {
+        font-size: 0.4rem;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        margin-left: 12px;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        max-width: 1987px;
+    }
+
+    .footer-tag {
+        font-size: 21px;
+    }
+
+    .container {
+        max-width: 1990px;
+    }
+
+    .list-elements li a {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    #Layout {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .grid-item p {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .grid-item h2 {
+        font-size: 1.8rem;
+    }
+
+    .container h1 {
+        font-size: 2.8rem;
+    }
+
+    .container h1 span {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 349px) and (max-width: 425px) {
+    .first-element {
+        margin-left: 11px;
+    }
+}
